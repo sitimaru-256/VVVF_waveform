@@ -1,6 +1,7 @@
 # VVVF_waveform
 atmega2560で動作する波形生成プログラムです。
----pinout---
+
+---pinout---  
 OUTPUT  
 Pin5>pU  
 Pin3>pV  
