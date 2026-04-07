@@ -88,7 +88,7 @@ ISR (TIMER3_OVF_vect) {
   TCCR3A = 0b10101010; //位相基準に変更
   if (i > arraynum){
     i = 0;
-    if (ratio < 0.6296 && motorState == 1){pulseMode = 0;}
+    if (ratio < 0.6296 && motorState == 1){pulseMode = 0;u=0;}
     if (ratiob < 0.3402 && motorState == -1){pulseMode = 1;u=0;}
     if (ratio >= 0.6296 && ratio < 1 && motorState == 1){pulseMode = 2;}
     if (ratiob >= 0.3402 && ratiob < 1 && motorState == -1){pulseMode = 3;}
